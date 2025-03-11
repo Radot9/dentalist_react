@@ -2,7 +2,7 @@ const Button = ({ children, variant = "primary", size = "md", className = "", ..
     const baseStyles = "px-4 py-2 font-medium rounded-lg smooth-corners-lg transition-all duration-300 text-center";
   
     const variants = {
-      primary: "bg-deep-indigo text-white hover:bg-midnight-indigo",
+      primary: "bg-deep-indigo text-white hover:bg-midnight-indigo hover:shadow-2xl",
     };
   
     const sizes = {

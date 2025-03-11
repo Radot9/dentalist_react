@@ -50,19 +50,39 @@ const About = () => {
 
       {/* Priority */}
       <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-12 mt-20 md:mt-30 lg:mt-40 items-center">
-        <div>
-          <img src="/images/male-female-dentist-examining-patient 1.jpg" className="rounded-2xl"></img>
+        <div className="relative w-full max-w-[400px] aspect-[400/309] rounded-2xl">
+          {/* Background Box */}
+          <div className="absolute inset-0 bg-sky-mist rounded-2xl lg:flex-shrink-0 lg:mr-12"></div>
+          <img
+            src="/images/male-female-dentist-examining-patient 1.jpg"
+            className="absolute inset-0 w-full h- object-cover rounded-2xl left-10 top-10 max-w-[550px] aspect-[550/380] "
+          />
         </div>
-        <div className="flex-1/2">
-        <p className="text-title text-deep-indigo font-bold">OUR PRIORITY</p>
-          <h3 className="text-h2  font-bold text-deep-navy mb-4 lg:mb-8 tracking-tighter">
-          Our clients are our 
-          priority
-          </h3>
+
+        <div className="flex-1/2 lg:pl-50">
+          <p className="text-title text-deep-indigo font-bold">OUR PRIORITY</p>
+          <h2 className="text-h2 font-bold text-deep-navy mb-4 lg:mb-8 tracking-tighter max-w-[410px]">
+            Our clients are our priority
+          </h2>
           <p className="text-body text-midnight-indigo-60 font-medium mb-8 lg:mb-[72px] tracking-tight">
-          Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
           </p>
-          <Button size="lg">Contact Us</Button>
+          <Button size="lg">Book an appointment</Button>
+        </div>
+      </div>
+
+      {/* Safety */}
+      <div>
+        <div className="bg-light-indigo rounded-4xl lg:h-[700px] overflow-hidden relative mt-20 md:mt-30 lg:mt-40 flex items-center flex-col text-center lg:pt-24">
+          <p className="text-title text-deep-indigo font-bold">SAFETY</p>
+          <h2 className="text-h2 font-bold text-deep-navy mb-4 lg:mb-8 tracking-tighter max-w-[510px]">
+          We put the safety first
+          </h2>
+          <p className="text-body text-midnight-indigo-60 font-medium mb-8 lg:mb-[72px] tracking-tight max-w-[510px]">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
         </div>
       </div>
     </div>
