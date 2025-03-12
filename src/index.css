@@ -3,7 +3,7 @@
 
 @theme {
   --color-deep-indigo: #583fbc;
-  --color-light-indigo: #DBDEFA;
+  --color-light-indigo: #dbdefa;
   --color-sky-mist: #dbeffa;
   --color-soft-lavender: #f6dbfa;
   --color-rose-blush: #fadbe2;
@@ -12,6 +12,7 @@
   --color-midnight-indigo-70: rgba(24, 25, 69, 0.7);
   --color-midnight-indigo-60: rgba(24, 25, 69, 0.6);
   --color-midnight-indigo-50: rgba(24, 25, 69, 0.5);
+  --color-neutral: #96a0b5;
   --font-ubuntu: "Ubuntu", sans-serif;
 
   --text-link: clamp(12px, 1.5vw, 16px);
@@ -31,5 +32,4 @@
 }
 
 :root {
- 
 }
