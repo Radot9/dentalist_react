@@ -2,34 +2,38 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react"; // Icons for the hamburger menu
 import { Link } from "react-router-dom"; // If using React Router
 import { menuItems } from "../data/menu";
-import Logo from "/images/Logo.png"
+import Logo from "/images/Logo.png";
 import Button from "../ui/Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white fixed w-full top-0 left-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+    <nav className="bg-white fixed w-full top-0 left-0 z-50 px-12">
+      <div className="max-w-6xl mx-auto sm:px-6 lg:px-0">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-1/12"><img src={Logo} /></div>
+          <div className="flex-1/12">
+            <img src={Logo} />
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center flex-grow justify-between">
             <div className="md:flex space-x-15">
-            {menuItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.link}
-                className="text-title font-bold text-ubuntu text-midnight-indigo hover:text-deep-indigo transition"
-              >
-                {item.name}
-              </Link>
-            ))}
+              {menuItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.link}
+                  className="text-title font-bold text-ubuntu text-midnight-indigo hover:text-deep-indigo transition"
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
-            
-            <div><Button className="text-title font-bold">Book Appointment</Button></div>
+
+            <div>
+              <Button className="text-title font-bold">Book Appointment</Button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
