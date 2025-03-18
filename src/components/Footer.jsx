@@ -5,7 +5,7 @@ import Logo from "/images/Logo2.png";
 const Footer = () => {
   return (
     <footer className="bg-midnight-indigo text-white py-16 px-12 font-ubuntu">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Logo and Description - Takes full width on mobile, half width on desktop */}
           <div className="space-y-6 md:col-span-1">
